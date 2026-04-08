@@ -154,6 +154,9 @@ button {
   width: 11rem;
   border-style: none;
 }
+.search-input > :nth-child(4) * {
+  text-align: left !important;
+}
 .search-input > :nth-child(5) {
   width: 4.5rem;
   border-style: none;
@@ -338,13 +341,20 @@ hr {
   }
   .search-input > :nth-child(4) {
     width: 50% !important;
-    border-bottom: none;
+    border-bottom: 1px solid rgb(218, 218, 218) !important;
   }
   .search-input > :nth-child(5) {
     width: 100% !important;
     display: flex;
-    justify-content: center;
-    padding: 8px 0;
+    justify-content: center; /* จัดให้ปุ่มอยู่ตรงกลาง */
+    align-items: center;
+    border-bottom: none !important;
+    padding: 12px 0;
+  }
+  .search-input > :nth-child(5) button {
+    width: 50px; /* ปรับขนาดตามต้องการ */
+    height: 50px;
+    border-radius: 50%; /* ทำให้กลับมาเป็นวงกลม */
   }
   .quarter > * {
     width: 50%;
@@ -404,6 +414,10 @@ hr {
     border-right: none !important;
     border-bottom: 1px solid rgb(218, 218, 218) !important;
     padding: 10px 0;
+  }
+  .search-input > :nth-child(4) {
+    width: 100% !important;
+    border-bottom: 1px solid rgb(218, 218, 218) !important;
   }
   .search-input > :nth-child(5) {
     border-bottom: none !important;
